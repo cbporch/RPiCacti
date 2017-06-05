@@ -22,12 +22,12 @@ class Mailer:
             with open("messages/outside.txt") as file:
                 msg = file.read()
 
-        msg = """From: Raspberry Pi <{0}>
+        msg = MIMEText("""From: Raspberry Pi <{0}>
         To: Your Name <{1}>
         Subject: PiCacti
         
         {2}
-        """.format(self.SENDER, self.RECEIVER, msg)
+        """.format(self.SENDER, self.RECEIVER, msg))
 
         try:
             s = smtplib.SMTP('localhost')
@@ -37,12 +37,12 @@ class Mailer:
             print("unable to send mail")
 
     def mail_test(self):
-        msg = """From: Raspberry Pi <{0}>
+        msg = MIMEText("""From: Raspberry Pi <{0}>
                 To: Your Name <{1}>
                 Subject: PiCacti
 
                 Test
-                """.format(self.SENDER, self.RECEIVER)
+                """.format(self.SENDER, self.RECEIVER))
 
         try:
             s = smtplib.SMTP('localhost')
