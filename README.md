@@ -11,8 +11,6 @@ To setup PiCacti, modify the file called `NEWsecrets.json` in the PiCacti direct
       "sender-email": "SENDER-EMAIL",
       "rec-email": "EMAIL",
       "API-key": "KEY",
-      "zipcode": "ZIP",
-      "country": "COUNTRY",
       "city-id": "CITY-ID"
     }
 
