@@ -8,10 +8,7 @@ below a certain threshold. Designed for use on a web-connected Raspberry Pi.
 To setup PiCacti, modify the file called `NEWsecrets.json` in the PiCacti directory, with the following changes:
 
     {
-      "sender-email": {
-        "email": "SENDER-EMAIL",
-        "pass": "PASSWORD"
-      },
+      "sender-email": "SENDER-EMAIL",
       "rec-email": "EMAIL",
       "API-key": "KEY",
       "zipcode": "ZIP",
