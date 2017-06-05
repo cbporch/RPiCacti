@@ -52,5 +52,5 @@ class Mailer:
             # something broke
             print("unable to send mail")
 
-m = Mailer
+m = Mailer()
 m.mail_test()
