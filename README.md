@@ -1,5 +1,7 @@
 # PiCacti
 
+**Currently Nonfunctional**
+
 A simple program that checks the weather and sends an email to you if the temperature will be 
 below a certain threshold. Designed for use on a web-connected Raspberry Pi.
 
