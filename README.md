@@ -17,7 +17,6 @@ To setup PiCacti, modify the file called `NEWsecrets.json` in the PiCacti direct
     }
 
 - Replace `SENDER-EMAIL` with an email account to do the sending.
-- Replace `PASSWORD` with the password for that account
 - Replace `EMAIL` with the account to be notified
 - Replace `KEY` with a valid [OpenWeatherMap](https://www.openweathermap.org/) API key
 - Replace `CITY-ID` with a City ID code for a city close to you: [check here](http://openweathermap.org/help/city_list.txt)
