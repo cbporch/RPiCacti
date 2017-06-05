@@ -47,6 +47,9 @@ class Mailer:
         try:
             s = smtplib.SMTP('localhost')
             s.sendmail(self.SENDER, self.RECEIVER, msg)
+            print("message sent!")
         except smtplib.SMTPException:
             # something broke
             print("unable to send mail")
+
+Mailer.mail_test()
