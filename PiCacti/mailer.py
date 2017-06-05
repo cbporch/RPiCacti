@@ -29,8 +29,12 @@ class Mailer:
         {2}
         """.format(self.SENDER, self.RECEIVER, msg))
 
+        msg['Subject'] = 'PiCacti'
+        msg['From'] = self.SENDER
+        msg['To'] = self.RECEIVER
+
         try:
-            s = smtplib.SMTP('localhost')
+            s = smtplib.SMTP(host='smtp.gmail.com', port=587)
             s.sendmail(self.SENDER, self.RECEIVER, msg)
         except smtplib.SMTPException:
             # something broke
@@ -44,8 +48,12 @@ class Mailer:
                 Test
                 """.format(self.SENDER, self.RECEIVER))
 
+        msg['Subject'] = 'PiCacti'
+        msg['From'] = self.SENDER
+        msg['To'] = self.RECEIVER
+
         try:
-            s = smtplib.SMTP('localhost')
+            s = smtplib.SMTP(host='smtp.gmail.com', port=587)
             s.sendmail(self.SENDER, self.RECEIVER, msg)
             print("message sent!")
         except smtplib.SMTPException:
