@@ -7,7 +7,7 @@ from email.mime.text import MIMEText
 class Mailer:
     def __init__(self):
         # read parameters from JSON file
-        with open('secrets.json', 'r') as fp:
+        with open('PiCacti/secrets.json', 'r') as fp:
             secrets_json = json.load(fp)
         self.SENDER = secrets_json["sender-email"]
         self.RECEIVER = secrets_json["rec-email"]
